@@ -1,0 +1,13 @@
+{
+  "name": "weather-widget",
+  "version": "1.0.0",
+  "description": "A responsive weather widget created for CPRG 309. The widget uses WeatherAPI to display weather information for Calgary.It allows users to switch between Celsius and Fahrenheit.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

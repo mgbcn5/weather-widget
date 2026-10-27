@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="weather-widget">
+    <header class="weather-header">
+      <div><p class="eyebrow">Your daily forecast</p>
+        <div class="city-heading">
+  <span class="cbi--weather-page-alt" aria-hidden="true"></span>
+  <h1 id="city-name">Calgary</h1>
+</div>
+      </div>
+
+      <div class="unit-toggle" role="group" aria-label="Temperature unit">
+        <button
+          id="celsius-button"
+          type="button"
+          aria-pressed="true"
+        >
+          °C
+        </button>
+        <button
+          id="fahrenheit-button"
+          type="button"
+          aria-pressed="false"
+        >
+          °F
+        </button>
+      </div>
+    </header>
+
+    <p id="status-message" role="status" aria-live="polite">
+      Loading weather…
+    </p>
+
+    <section
+      id="current-weather"
+      class="current-weather"
+      aria-label="Current weather"
+      hidden
+    >
+      <span id="current-icon" class="weather-icon" aria-hidden="true"></span>
+      <p id="current-temperature" class="current-temperature"></p>
+      <p id="current-condition"></p>
+    </section>
+
+    <section class="forecast-section" aria-labelledby="forecast-heading">
+      <h2 id="forecast-heading">Daily forecast</h2>
+      <div id="forecast-grid" class="forecast-grid"></div>
+    </section>
+
+    <footer>
+      <p>Weather data from <a href="https://www.weatherapi.com/">WeatherAPI.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
