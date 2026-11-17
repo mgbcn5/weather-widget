@@ -223,6 +223,7 @@ if (statusMessage) {
 }
 
 // Update the unit and redraw the temperatures
+
 function changeUnit(selectedUnit: TemperatureUnit): void {
 	unit = selectedUnit;
 
