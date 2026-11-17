@@ -4,7 +4,7 @@ Overview: Weather app that displays the current conditions on a 3-day forecast. 
 For Part 2, I changed my original JavaScript code to TypeScript. I wanted to keep the weather app the same while making some improvements to the code.
 
 
-**Live demo:** [http://127.0.0.1:5500/index.html]
+**Live demo:** https://mgbcn5.github.io/weather-widget/.
 ## Features
 
 - Current temperature and conditions
@@ -29,11 +29,7 @@ I chose TypeScript because it was similar to JavaScript, which I was already fam
 
 I thought it would be a good way to make my code a little more organized and help catch mistakes before running the app.
 
-## Why I Chose TypeScript
-
-I chose TypeScript because it was similar to JavaScript, which I was already familiar with. Since my weather app uses an API, I wanted to try adding types to make the code easier to understand and catch mistakes earlier.
-
-What I Changed
+## What I Changed
 
 I kept my original functions but added interfaces for the weather data, types for the HTML elements, and checks for missing elements. I also set up tsconfig.json to compile the TypeScript into JavaScript.
 
@@ -52,9 +48,9 @@ node.js and npm
 1. Clone the repository:
  git clone https://github.com/megbcn5/weather-widget.git
 cd weather-widget
-2. Install dependencies: npn install
+2. Install dependencies: npm install
 3. Get a free API key from [Weather API](https://www.weatherapi.com/my/).
-4. Add your key where the app expects it (for example in `script.js`):
+4. Add your key where the app expects it (for example in `script.ts`):
 
    ```js
    const API_KEY = "YOUR_API_KEY_HERE";
@@ -72,7 +68,7 @@ If the data can't be loaded, a message appears under the title explaining what w
 ```
 ├── index.html
 ├── package.json
-├── styles.css
+├── style.css
 ├── script.ts
 ├── script.js
 ├── tsconfig.json
